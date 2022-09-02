@@ -33,6 +33,9 @@ The Main will do the following:
 
 This is just a skeletal implementation to demostrate the structure of Test Cases in Katalon Studio.
 
+
+![image](./docs/diagrams/out/sequence/sequence.png)
+
 You should be able to extend this so that it fullfills your own test scenarios.
 
 You should be able to extend the "fetcher" so that it talk to browser to fetch QRCode image from the database while utilizing "WebUI.*" keywords.
