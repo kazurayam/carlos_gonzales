@@ -1,0 +1,25 @@
+@startuml sequence
+actor       Tester        as tester
+participant Main          as main
+participant fetcher       as fetcher
+participant processor     as proc
+database    QRCodeList    as list
+database    DB            as db
+control     "Mobile device"  as mobile
+tester   -> main       : run it
+main     -> list       : retrieve the list
+list     -> main       : return List of IDs
+loop
+  main     -> fetcher    : fetch the QRCode
+  fetcher  -> db         : retrieve DB
+  db       -> fetcher    : return the image
+  fetcher  -> main       : return the image
+
+  main     -> proc       : process the QRCode
+  proc     -> mobile     : do whatever
+  mobile   -> proc
+  proc     -> main
+end
+main   -> tester       : say done
+@enduml
+Footer
