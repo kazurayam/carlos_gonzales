@@ -31,7 +31,7 @@ The Main will do the following:
 4. The qrcode_fetcher fetches an PNG image from database (in fact, a local folder)
 5. The qrcode_processor process the QRCode image (in fact, print it.toString() to console)
 
-This is just a skeletal implementation to demostrate the structure of Test Cases in Katalon Studio. You should be able to extend this so that it fullfills your own test scenarios.
+This is just a skeletal implementation to demonstrate the structure of Test Cases in Katalon Studio. You should be able to extend this so that it fulfills your own test scenarios.
 
 
 ![image](./docs/diagrams/out/sequence/sequence.png)
@@ -45,10 +45,13 @@ You should be able to extends the "processor" so that it sends the QRCode image 
 
 Please note I used "WebUI.*" keywords and "Mobile.*" keywords intermixed in this project. It is just possible.
 
-You may have an misunderstanding that a Test Case in Katalon Studio is designated either one of the Project Type (WebUI, WebService, Mobiel, Windows, ...). It is not right. You can use keywords of all types.
+You may have an misunderstanding that a Test Case in Katalon Studio is designated either one of the Project Type (WebUI, WebService, Mobile, Windows, ...). It is not right. You can use keywords of all types.
 
-The "Project Type" property of a Katalon's project is significant only for the GUI of Katalon Studio. The GUI refers to the project type just to decide which GUI components (labels, buttons, drop-downs, ...) to be displayed on a window; GUI of WebUI project will not display "Mobile" menu; GUI of Mobile project will not display "WebUI" menu; that's whole reason why the project type property is there.
-
+The "Project Type" property of a Katalon's project is significant only for the GUI of Katalon Studio.
 But your test scripts can call all keyword, the project type is not significant for your scripts.
+
+
+The GUI refers to the project type just to decide which GUI components (labels, buttons, drop-downs, ...) to be displayed on a window; GUI of WebUI project will not display "Mobile" menu; GUI of Mobile project will not display "WebUI" menu; that's whole reason why the project type property is there.
+
 
 

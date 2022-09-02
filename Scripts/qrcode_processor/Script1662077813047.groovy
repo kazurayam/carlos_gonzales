@@ -1,9 +1,13 @@
 import java.awt.image.BufferedImage
 
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // make sure the id is given by the Main
 assert qrcodeId != null
+
+WebUI.comment("processing ${qrcodeId}")
+
 
 // make sure the image is given by the Main
 assert image != null
@@ -12,4 +16,4 @@ assert image != null
 assert image instanceof BufferedImage
 
 // you can do whatever you like 
-Mobile.comment("qrcodeId=${qrcodeId}; " + image.toString())
+Mobile.comment("${qrcodeId}: " + image.toString())
