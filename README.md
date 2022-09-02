@@ -31,12 +31,11 @@ The Main will do the following:
 4. The qrcode_fetcher fetches an PNG image from database (in fact, a local folder)
 5. The qrcode_processor process the QRCode image (in fact, print it.toString() to console)
 
-This is just a skeletal implementation to demostrate the structure of Test Cases in Katalon Studio.
+This is just a skeletal implementation to demostrate the structure of Test Cases in Katalon Studio. You should be able to extend this so that it fullfills your own test scenarios.
 
 
 ![image](./docs/diagrams/out/sequence/sequence.png)
 
-You should be able to extend this so that it fullfills your own test scenarios.
 
 You should be able to extend the "fetcher" so that it talk to browser to fetch QRCode image from the database while utilizing "WebUI.*" keywords.
 
