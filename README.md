@@ -41,6 +41,12 @@ You should be able to extends the "processor" so that it sends the QRCode image 
 
 ----
 
-Please note I used "WebUI.*" keywords and "Mobile.*" keywords intermixed in this project. It is just possbile. You may think that a Test Case in Katalon Studio is designated either one of the Project Type (WebUI, WebService, Mobiel, Windows, ...). It is not right. You can use keywords of all types. The "Project Type" property of a Katalon's project is significant only for the GUI of Katalon Studio. But your test scripts can call all keyword, the project type is not significant for your scripts.
+Please note I used "WebUI.*" keywords and "Mobile.*" keywords intermixed in this project. It is just possible.
+
+You may have an misunderstanding that a Test Case in Katalon Studio is designated either one of the Project Type (WebUI, WebService, Mobiel, Windows, ...). It is not right. You can use keywords of all types.
+
+The "Project Type" property of a Katalon's project is significant only for the GUI of Katalon Studio. The GUI refers to the project type just to decide which GUI components (labels, buttons, drop-downs, ...) to be displayed on a window; GUI of WebUI project will not display "Mobile" menu; GUI of Mobile project will not display "WebUI" menu; that's whole reason why the project type property is there.
+
+But your test scripts can call all keyword, the project type is not significant for your scripts.
 
 
